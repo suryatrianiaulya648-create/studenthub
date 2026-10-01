@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudentHub – Portal Mahasiswa Modern</title>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================
+       NAVBAR
+  ============================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">🎓</span>
+        <span>Student<span class="logo-accent">Hub</span></span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="nav-links" id="nav-links" aria-label="Navigasi utama">
+        <a href="#home"    class="nav-link active">Beranda</a>
+        <a href="#fitur"   class="nav-link">Fitur</a>
+        <a href="#jadwal"  class="nav-link">Jadwal</a>
+        <a href="#tugas"   class="nav-link">Tugas</a>
+        <a href="#tips"    class="nav-link">Tips</a>
+        <a href="#tentang" class="nav-link">Tentang</a>
+        <a href="#kontak"  class="nav-link">Kontak</a>
+      </nav>
+
+      <!-- CTA -->
+      <a href="#fitur" class="btn btn-primary nav-cta">Mulai</a>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+      <a href="#home"    class="mobile-link">Beranda</a>
+      <a href="#fitur"   class="mobile-link">Fitur</a>
+      <a href="#jadwal"  class="mobile-link">Jadwal</a>
+      <a href="#tugas"   class="mobile-link">Tugas</a>
+      <a href="#tips"    class="mobile-link">Tips</a>
+      <a href="#tentang" class="mobile-link">Tentang</a>
+      <a href="#kontak"  class="mobile-link">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- ============================
+       HERO
+  ============================= -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <!-- Left: text -->
+      <div class="hero-text reveal">
+        <span class="hero-badge">✨ Portal Akademik Terbaik</span>
+        <h1 class="hero-title">
+          Selamat Datang di<br />
+          <span class="gradient-text">StudentHub</span>
+        </h1>
+        <p class="hero-desc">
+          Satu ruang digital untuk membantu mahasiswa mengatur aktivitas,
+          informasi akademik, dan kebutuhan perkuliahan.
+        </p>
+        <div class="hero-actions">
+          <a href="#fitur"   class="btn btn-primary btn-lg">🚀 Jelajahi Sekarang</a>
+          <a href="#tentang" class="btn btn-outline btn-lg">📖 Tentang StudentHub</a>
+        </div>
+        <!-- Quick stats -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong>4+</strong>
+            <span>Fitur Utama</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>100%</strong>
+            <span>Gratis</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>Responsif</strong>
+            <span>Semua Perangkat</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: illustration -->
+      <div class="hero-visual reveal reveal-right">
+        <div class="hero-card-float card-1">📚 Materi Kuliah</div>
+        <div class="hero-card-float card-2">✅ Tugas Selesai</div>
+        <div class="hero-card-float card-3">📅 Jadwal Hari Ini</div>
+        <div class="hero-blob">
+          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+            <defs>
+              <linearGradient id="blobGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path fill="url(#blobGrad)" d="M421.5,304Q392,358,344,388.5Q296,419,241,423Q186,427,141,394.5Q96,362,68,311Q40,260,52.5,206Q65,152,104,115Q143,78,196,60Q249,42,298,65Q347,88,386,126Q425,164,440.5,212Q456,260,421.5,304Z" />
+          </svg>
+          <!-- Student SVG illustration -->
+          <div class="student-illustration" aria-hidden="true">
+            <svg viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg" width="180">
+              <!-- Body -->
+              <rect x="65" y="130" width="70" height="90" rx="10" fill="#2563eb"/>
+              <!-- Head -->
+              <circle cx="100" cy="100" r="35" fill="#fde68a"/>
+              <!-- Hair -->
+              <ellipse cx="100" cy="68" rx="36" ry="18" fill="#1e293b"/>
+              <!-- Eyes -->
+              <circle cx="88" cy="100" r="4" fill="#1e293b"/>
+              <circle cx="112" cy="100" r="4" fill="#1e293b"/>
+              <!-- Smile -->
+              <path d="M90 114 Q100 122 110 114" stroke="#1e293b" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <!-- Graduation cap -->
+              <rect x="68" y="62" width="64" height="8" rx="2" fill="#1e293b"/>
+              <polygon points="100,48 72,66 128,66" fill="#1e293b"/>
+              <line x1="128" y1="66" x2="133" y2="82" stroke="#f59e0b" stroke-width="3"/>
+              <circle cx="133" cy="84" r="4" fill="#f59e0b"/>
+              <!-- Book in hand -->
+              <rect x="110" y="150" width="40" height="52" rx="4" fill="#fff" stroke="#93c5fd" stroke-width="2"/>
+              <line x1="130" y1="152" x2="130" y2="200" stroke="#93c5fd" stroke-width="1.5"/>
+              <line x1="115" y1="165" x2="127" y2="165" stroke="#bfdbfe" stroke-width="1.5"/>
+              <line x1="115" y1="172" x2="127" y2="172" stroke="#bfdbfe" stroke-width="1.5"/>
+              <line x1="115" y1="179" x2="127" y2="179" stroke="#bfdbfe" stroke-width="1.5"/>
+              <!-- Legs -->
+              <rect x="75" y="215" width="20" height="40" rx="8" fill="#1e40af"/>
+              <rect x="105" y="215" width="20" height="40" rx="8" fill="#1e40af"/>
+              <!-- Shoes -->
+              <ellipse cx="85" cy="255" rx="14" ry="6" fill="#1e293b"/>
+              <ellipse cx="115" cy="255" rx="14" ry="6" fill="#1e293b"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FITUR
+  ============================= -->
+  <section class="section" id="fitur">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Apa yang Kami Tawarkan</span>
+        <h2 class="section-title">Fitur <span class="gradient-text">Unggulan</span></h2>
+        <p class="section-desc">Semua yang kamu butuhkan untuk mengelola perkuliahan dalam satu platform.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Card 1 -->
+        <div class="feature-card reveal" data-delay="0">
+          <div class="feature-icon-wrap icon-blue">📚</div>
+          <h3>Materi Kuliah</h3>
+          <p>Akses semua materi kuliah yang terorganisir per mata kuliah dan semester dengan mudah kapan saja.</p>
+          <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer" class="card-link">Lihat Materi <span>→</span></a>
+        </div>
+        <!-- Card 2 -->
+        <div class="feature-card reveal" data-delay="100">
+          <div class="feature-icon-wrap icon-purple">📝</div>
+          <h3>Daftar Tugas</h3>
+          <p>Kelola dan pantau semua tugas kuliah dengan status yang jelas agar tidak ada deadline yang terlewat.</p>
+          <a href="#tugas" class="card-link">Lihat Tugas <span>→</span></a>
+        </div>
+        <!-- Card 3 -->
+        <div class="feature-card reveal" data-delay="200">
+          <div class="feature-icon-wrap icon-teal">📅</div>
+          <h3>Jadwal Kuliah</h3>
+          <p>Tampilkan jadwal kuliah harian dan mingguan secara rapi agar kamu selalu tahu agenda perkuliahan.</p>
+          <a href="#jadwal" class="card-link">Lihat Jadwal <span>→</span></a>
+        </div>
+        <!-- Card 4 -->
+        <div class="feature-card reveal" data-delay="300">
+          <div class="feature-icon-wrap icon-orange">📢</div>
+          <h3>Informasi Kampus</h3>
+          <p>Dapatkan update terbaru seputar pengumuman, acara, dan berita penting dari kampus secara real-time.</p>
+          <a href="https://kemdikbud.go.id" target="_blank" rel="noopener noreferrer" class="card-link">Lihat Info <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       JADWAL
+  ============================= -->
+  <section class="section section-alt" id="jadwal">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Minggu Ini</span>
+        <h2 class="section-title">Jadwal <span class="gradient-text">Kuliah</span></h2>
+        <p class="section-desc">Rincian jadwal perkuliahan semester ini. Pastikan kamu tidak melewatkan satu pun kelas.</p>
+      </div>
+
+      <div class="table-wrapper reveal">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Hari</th>
+              <th>Jam</th>
+              <th>Mata Kuliah</th>
+              <th>Ruangan</th>
+              <th>Dosen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="today-row">
+              <td><span class="day-badge monday">Senin</span></td>
+              <td>08:00 – 10:00</td>
+              <td><strong>Pemrograman Web</strong></td>
+              <td>Lab. Komputer A</td>
+              <td>Dr. Andi Wijaya, M.T.</td>
+            </tr>
+            <tr>
+              <td><span class="day-badge monday">Senin</span></td>
+              <td>13:00 – 15:00</td>
+              <td><strong>Basis Data</strong></td>
+              <td>Ruang 301</td>
+              <td>Dr. Sari Dewi, M.Kom.</td>
+            </tr>
+            <tr>
+              <td><span class="day-badge tuesday">Selasa</span></td>
+              <td>09:00 – 11:00</td>
+              <td><strong>Algoritma & Struktur Data</strong></td>
+              <td>Lab. Komputer B</td>
+              <td>Prof. Budi Santoso, Ph.D.</td>
+            </tr>
+            <tr>
+              <td><span class="day-badge tuesday">Selasa</span></td>
+              <td>13:00 – 14:30</td>
+              <td><strong>Matematika Diskrit</strong></td>
+              <td>Ruang 205</td>
+              <td>Dra. Lina Marlina, M.Si.</td>
+            </tr>
+            <tr>
+              <td><span class="day-badge wednesday">Rabu</span></td>
+              <td>08:00 – 10:00</td>
+              <td><strong>Rekayasa Perangkat Lunak</strong></td>
+              <td>Ruang 102</td>
+              <td>Dr. Hendra Kusuma, M.T.</td>
+            </tr>
+            <tr>
+              <td><span class="day-badge thursday">Kamis</span></td>
+              <td>10:00 – 12:00</td>
+              <td><strong>Jaringan Komputer</strong></td>
+              <td>Lab. Jaringan</td>
+              <td>Dr. Rini Anggraeni, M.T.</td>
+            </tr>
+            <tr>
+              <td><span class="day-badge friday">Jumat</span></td>
+              <td>09:00 – 10:30</td>
+              <td><strong>Etika Profesi</strong></td>
+              <td>Aula Utama</td>
+              <td>Drs. Agus Pratama, M.Pd.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       TUGAS
+  ============================= -->
+  <section class="section" id="tugas">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Pantau Progress</span>
+        <h2 class="section-title">Daftar <span class="gradient-text">Tugas</span></h2>
+        <p class="section-desc">Semua tugas kuliah kamu dalam satu tampilan. Jangan sampai ada yang terlewat!</p>
+      </div>
+
+      <!-- Filter Tugas -->
+      <div class="tugas-filter reveal">
+        <button class="filter-pill active" data-status="all">Semua</button>
+        <button class="filter-pill" data-status="belum">Belum Dikerjakan</button>
+        <button class="filter-pill" data-status="proses">Sedang Dikerjakan</button>
+        <button class="filter-pill" data-status="selesai">Selesai</button>
+      </div>
+
+      <div class="tugas-list reveal" id="tugas-list">
+        <!-- Tugas items -->
+        <div class="tugas-card" data-status="belum">
+          <div class="tugas-left">
+            <div class="tugas-icon">📚</div>
+            <div>
+              <h4>Laporan Praktikum Pemrograman Web</h4>
+              <p class="tugas-meta">Pemrograman Web · Deadline: <strong>20 Jan 2025</strong></p>
+            </div>
+          </div>
+          <span class="badge badge-belum">Belum Dikerjakan</span>
+        </div>
+
+        <div class="tugas-card" data-status="proses">
+          <div class="tugas-left">
+            <div class="tugas-icon">🗄️</div>
+            <div>
+              <h4>Tugas Normalisasi Basis Data</h4>
+              <p class="tugas-meta">Basis Data · Deadline: <strong>18 Jan 2025</strong></p>
+            </div>
+          </div>
+          <span class="badge badge-proses">Sedang Dikerjakan</span>
+        </div>
+
+        <div class="tugas-card" data-status="selesai">
+          <div class="tugas-left">
+            <div class="tugas-icon">✅</div>
+            <div>
+              <h4>Quiz Algoritma Pertemuan 5</h4>
+              <p class="tugas-meta">Algoritma & Struktur Data · Deadline: <strong>15 Jan 2025</strong></p>
+            </div>
+          </div>
+          <span class="badge badge-selesai">Selesai</span>
+        </div>
+
+        <div class="tugas-card" data-status="proses">
+          <div class="tugas-left">
+            <div class="tugas-icon">📐</div>
+            <div>
+              <h4>Latihan Soal Graf & Tree</h4>
+              <p class="tugas-meta">Matematika Diskrit · Deadline: <strong>22 Jan 2025</strong></p>
+            </div>
+          </div>
+          <span class="badge badge-proses">Sedang Dikerjakan</span>
+        </div>
+
+        <div class="tugas-card" data-status="belum">
+          <div class="tugas-left">
+            <div class="tugas-icon">💻</div>
+            <div>
+              <h4>Proposal Proyek RPL Kelompok</h4>
+              <p class="tugas-meta">Rekayasa Perangkat Lunak · Deadline: <strong>25 Jan 2025</strong></p>
+            </div>
+          </div>
+          <span class="badge badge-belum">Belum Dikerjakan</span>
+        </div>
+
+        <div class="tugas-card" data-status="selesai">
+          <div class="tugas-left">
+            <div class="tugas-icon">🌐</div>
+            <div>
+              <h4>Makalah Topologi Jaringan</h4>
+              <p class="tugas-meta">Jaringan Komputer · Deadline: <strong>10 Jan 2025</strong></p>
+            </div>
+          </div>
+          <span class="badge badge-selesai">Selesai</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       TIPS
+  ============================= -->
+  <section class="section section-alt" id="tips">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Produktivitas</span>
+        <h2 class="section-title">Tips <span class="gradient-text">Mahasiswa</span></h2>
+        <p class="section-desc">Kebiasaan kecil yang konsisten membawa hasil luar biasa dalam perkuliahan.</p>
+      </div>
+
+      <div class="tips-grid">
+        <div class="tips-card reveal" data-delay="0">
+          <div class="tips-number">01</div>
+          <div class="tips-emoji">⏰</div>
+          <h3>Mengatur Waktu</h3>
+          <p>Gunakan teknik Pomodoro atau time-blocking untuk membagi waktu belajar dengan efektif dan menghindari prokrastinasi.</p>
+        </div>
+        <div class="tips-card reveal" data-delay="100">
+          <div class="tips-number">02</div>
+          <div class="tips-emoji">📖</div>
+          <h3>Konsistensi Belajar</h3>
+          <p>Lebih baik belajar 30 menit setiap hari daripada belajar 5 jam sehari sebelum ujian. Konsistensi adalah kuncinya.</p>
+        </div>
+        <div class="tips-card reveal" data-delay="200">
+          <div class="tips-number">03</div>
+          <div class="tips-emoji">📌</div>
+          <h3>Catat Deadline</h3>
+          <p>Gunakan kalender atau aplikasi pengingat untuk mencatat semua deadline tugas dan ujian agar tidak ada yang terlewat.</p>
+        </div>
+        <div class="tips-card reveal" data-delay="300">
+          <div class="tips-number">04</div>
+          <div class="tips-emoji">🙋</div>
+          <h3>Aktif di Kelas</h3>
+          <p>Jangan takut bertanya dan berpendapat. Partisipasi aktif di kelas meningkatkan pemahaman dan nilai keaktifanmu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       TENTANG
+  ============================= -->
+  <section class="section" id="tentang">
+    <div class="container">
+      <div class="about-wrapper">
+        <!-- Left -->
+        <div class="about-visual reveal">
+          <div class="about-img-wrap">
+            <div class="about-blob" aria-hidden="true"></div>
+            <div class="about-icon-grid" aria-hidden="true">
+              <div class="aig-item">🎓</div>
+              <div class="aig-item">💡</div>
+              <div class="aig-item">📊</div>
+              <div class="aig-item">🚀</div>
+              <div class="aig-item">📚</div>
+              <div class="aig-item">💻</div>
+            </div>
+          </div>
+        </div>
+        <!-- Right -->
+        <div class="about-text reveal reveal-right">
+          <span class="section-badge">Tentang Kami</span>
+          <h2 class="section-title" style="text-align:left; margin-bottom:1rem;">
+            Apa itu <span class="gradient-text">StudentHub?</span>
+          </h2>
+          <p>
+            <strong>StudentHub</strong> adalah website yang dikembangkan sebagai proyek tugas kuliah
+            sekaligus konsep platform digital yang dirancang untuk membantu mahasiswa dalam mengelola
+            informasi dan aktivitas perkuliahan mereka sehari-hari.
+          </p>
+          <p style="margin-top:1rem;">
+            Platform ini hadir dengan fitur-fitur sederhana namun fungsional seperti pengelolaan jadwal,
+            pemantauan tugas, akses materi, dan informasi kampus — semuanya dalam satu tampilan yang
+            bersih, modern, dan mudah digunakan.
+          </p>
+          <ul class="about-list">
+            <li>✅ Dibangun dengan HTML5, CSS3, dan JavaScript murni</li>
+            <li>✅ Desain responsif untuk semua ukuran layar</li>
+            <li>✅ Antarmuka modern dan ramah pengguna</li>
+            <li>✅ Open source dan bebas dimodifikasi</li>
+          </ul>
+          <a href="#kontak" class="btn btn-primary" style="margin-top:1.5rem; display:inline-block;">Hubungi Kami</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       KONTAK
+  ============================= -->
+  <section class="section section-alt" id="kontak">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Hubungi Kami</span>
+        <h2 class="section-title">Ada <span class="gradient-text">Pertanyaan?</span></h2>
+        <p class="section-desc">Isi form di bawah ini dan kami akan membalasnya sesegera mungkin.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Info cards -->
+        <div class="contact-info reveal">
+          <div class="contact-info-card">
+            <span class="ci-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <p>studenthub@kampus.ac.id</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <span class="ci-icon">📷</span>
+            <div>
+              <strong>Instagram</strong>
+              <p>@studenthub.id</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <span class="ci-icon">📍</span>
+            <div>
+              <strong>Lokasi</strong>
+              <p>Gedung Fakultas Teknik, Lt. 3</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <span class="ci-icon">🕐</span>
+            <div>
+              <strong>Jam Aktif</strong>
+              <p>Senin – Jumat, 08:00 – 17:00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form reveal reveal-right" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap *</label>
+              <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" />
+              <span class="field-error" id="error-nama"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="nama@email.com" />
+              <span class="field-error" id="error-email"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subjek">Subjek *</label>
+            <input type="text" id="subjek" name="subjek" placeholder="Topik pesan kamu" />
+            <span class="field-error" id="error-subjek"></span>
+          </div>
+          <div class="form-group">
+            <label for="pesan">Pesan *</label>
+            <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesanmu di sini…"></textarea>
+            <span class="field-error" id="error-pesan"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="send-btn">
+            <span id="btn-text">✉️ Kirim Pesan</span>
+            <span id="btn-loading" style="display:none;">⏳ Mengirim…</span>
+          </button>
+          <!-- Success alert -->
+          <div class="form-success" id="form-success" style="display:none;">
+            🎉 Pesan kamu berhasil dikirim! Kami akan menghubungimu segera.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+  ============================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="nav-logo footer-logo">
+          <span class="logo-icon">🎓</span>
+          <span>Student<span class="logo-accent">Hub</span></span>
+        </div>
+        <p>Satu ruang digital untuk mahasiswa modern. Kelola akademikmu dengan lebih cerdas.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/studenthub.id" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn">📷 Instagram</a>
+          <a href="mailto:studenthub@kampus.ac.id" aria-label="Email" class="social-btn">📧 Email</a>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div class="footer-links-group">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#fitur">Fitur</a></li>
+          <li><a href="#jadwal">Jadwal</a></li>
+          <li><a href="#tugas">Tugas</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-group">
+        <h4>Lainnya</h4>
+        <ul>
+          <li><a href="#tips">Tips</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>StudentHub &copy; 2026 · Dibuat dengan ❤️ sebagai Tugas Kuliah</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
